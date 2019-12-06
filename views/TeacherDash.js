@@ -79,61 +79,6 @@ class TeacherDash extends React.Component {
     return (
       // this is just random filler for the template, but this is where what the user sees is rendered
       <View style={styles.container}>
-        <View style={styles.topBar}>
-          <View style={styles.leftContainer}>
-            <TouchableHighlight onPress={this.handleTeacherDash}>
-              <Image
-                source={{
-                  uri:
-                    "https://www.pace.edu/sites/default/files/styles/news_item_675x450/public/marijoRussel_OGrady_DAILY_0.jpg?itok=viugcOqU"
-                }}
-                style={styles.imageMain}
-              />
-            </TouchableHighlight>
-          </View>
-          <View style={styles.middleContainer}>
-            <Text style={styles.profileText}>Teacher User</Text>
-          </View>
-          <View style={styles.rightContainer}>
-            <TouchableHighlight onPress={this.handleCalendarPress}>
-              <Image
-                source={{
-                  uri:
-                    "http://fa2png.io/media/icons/font-awesome/4-7-0/calendar-times-o/256/0/274156_none.png"
-                }}
-                style={styles.icon}
-              />
-            </TouchableHighlight>
-            <TouchableHighlight onPress={this.handleProfilePress}>
-              <Image
-                source={{
-                  uri:
-                    "http://fa2png.io/media/icons/foundation-icon-fonts/2015-02-16/pencil/256/0/274156_none.png"
-                }}
-                style={styles.icon}
-              />
-            </TouchableHighlight>
-            <TouchableHighlight onPress={this.handleProfilePress}>
-              <Image
-                source={{
-                  uri:
-                    "http://fa2png.io/media/icons/font-awesome/4-7-0/address-card-o/256/0/274156_none.png"
-                }}
-                style={styles.icon}
-              />
-            </TouchableHighlight>
-          </View>
-        </View>
-        <View style={styles.dateBar}>
-          <Text style={styles.dateText}>MONDAY, DECEMBER 4ND</Text>
-        </View>
-        <ScrollView>
-          {this.state.lessonsList.map(student => (
-            <View key={student.name} style={styles.listContainer}>
-              <View style={styles.nameContainer}>
-                <Text style={styles.nameText}>{student.name}</Text>
-                <Text style={styles.infoText}>{student.time}</Text>
-              </View>
             </View>
           ))}
         </ScrollView>
